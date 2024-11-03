@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
 
     <title>Counter</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="parent">
-        <div class="counter" id="counter">0</div>
-        <div class="buttons">
-            <button onclick="increaseCounter()" >+</button>
-            <button onclick="decreaseCounter()" >-</button>
-            <button class="resetButton"  onclick="resetCounter()">Reset</button>
-        </div>
+      <div class="counter" id="counter">0</div>
+      <div class="buttons">
+        <!-- 
+            I can see that you're calling JavaScript functions directly from HTML event handlers. 
+            While this works, it can make the code more challenging to understand and maintain 
+            as the code grows in complexity. For instance, if you add more scripts to your HTML, 
+            it may become difficult to identify which script each function belongs to. 
+
+            Instead, I highly recommend defining event listeners in your script file. 
+            This approach keeps your JavaScript logic separate from the HTML, making the code cleaner and more manageable. 
+        -->
+        <button onclick="increaseCounter()">+</button>
+        <button onclick="decreaseCounter()">-</button>
+        <button class="resetButton" onclick="resetCounter()">Reset</button>
+      </div>
     </div>
 
-    <script src="./counter.js">
-    </script>
-    
-</body>
+    <script src="./counter.js"></script>
+  </body>
 </html>
-
