@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    
+    <header>
+        <button id="homeButton" class="header-button">WeHelp</button>
+        <nav>
+            <button id="aboutBtn">About</button>
+            <button id="contactBtn">Contact</button>
+            <button id="bookBtn" class="highlighted">Book now</button>
+        </nav>
+    </header>
+
+    
+    <main>
+        <section class="contact-section">
+            <div class="contact-text">
+                <h1>Contact Us</h1>
+                <p>If you're interested in collaborating, please provide your information, and we will contact you soon. We look forward to connecting with you.</p>
+                <p><strong>adminwehelp@wehelp.com</strong><br>(+45) 31-123-456</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <label for="firstName">First Name <span>(required)</span></label>
+                    <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                    
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+
+                    <label for="email">Email <span>(required)</span></label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+                    <label for="message">Message <span>(required)</span></label>
+                    <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <div id="thankYouMessage">
+                    Thank you, we will contact you soon.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>WeHelp</h3>
+            </div>
+            <div class="footer-right">
+                <div class="footer-location">
+                    <h4>Location</h4>
+                    <p>2450, København SV<br> Pladehals Allé 1</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:wehelp@wehelp.com">wehelp@wehelp.com</a><br>(+45) 31-123-456</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="../mainPage.js"> </script>
+</body>
+</html>

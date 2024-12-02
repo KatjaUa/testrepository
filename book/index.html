@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book now</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="../styles.css">
+    
+</head>
+<body>
+    <header>
+        <a id="homeButton" class="header-button">WeHelp</a>
+        <nav>
+          <button id="aboutBtn">About</button>
+          <button id="contactBtn">Contact</button>
+          <button id="bookBtn" class="highlighted">Book now</button>
+        </nav>
+    </header>
+    <main>
+        <section id="appointmentSection">
+            <h1>Schedule Your Appointment</h1>
+            <p>Schedule your consultation today to leverage our expert insights and drive your business forward. Our dedicated team is ready to provide tailored solutions to meet your organization's unique needs.</p>
+            <div id="appointmentSteps">
+                <div id="step1" class="step-container active">
+                    <h2>1. Choose Appointment</h2>
+                    <button class="appointmentOption" data-type="Free Consultation" data-duration="30" data-cost="0">Free Consultation - 30 minutes</button>
+                    <button class="appointmentOption" data-type="Basic Service" data-duration="60" data-cost="99">Basic Service - 1 hour DKK 300.00</button>
+                    <button class="appointmentOption" data-type="Advanced Service" data-duration="60" data-cost="199">Advanced Service - 1 hour DKK 700.00</button>
+                </div>
+                <div id="step2" class="step-container">
+                    <h2>2. Select Date & Time</h2>
+                    <div id="calendar">
+                        <div class="table-header">
+                            <button class="prev-week">Previous</button>
+                            <span class="week-label">Week of December 02</span>
+                            <button class="next-week">Next</button>
+                        </div>
+                        <div class="table-body">
+                            <!-- calendar days and slots will be dynamically generated -->
+                        </div>
+                    </div>
+                </div>
+                <div id="step3" class="step-container">
+                    <h2>3. Your Information</h2>
+                    <form id="appointmentForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                        <button type="submit">Complete Appointment</button>
+                    </form>
+                </div>
+                <div id="step4" class="step-container">
+                    <h2>4. Confirmation</h2>
+                    <p id="confirmationMessage"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h3>WeHelp</h3>
+            </div>
+            <div class="footer-right">
+                <div class="footer-location">
+                    <h4>Location</h4>
+                    <p>2450, København SV<br> Pladehals Allé 1</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:wehelp@wehelp.com">wehelp@wehelp.com</a><br>(+45) 31-123-456</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+          
+    <script src="./book.js"></script>
+    <script src="../mainPage.js"></script>
+</body>
+</html>

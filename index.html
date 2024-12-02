@@ -1,25 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expert assistance with your documentation</title>
+  <link rel="stylesheet" href="./styles.css">
+  <style>
 
-    <title>Counter</title>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    section {
+        text-align: center;
+        padding: 80px 20px;
+      }
+
+  </style>
 </head>
 <body>
-    <div class="parent">
-        <div class="counter" id="counter">0</div>
-        <div class="buttons">
-            <button onclick="increaseCounter()" >+</button>
-            <button onclick="decreaseCounter()" >-</button>
-            <button class="resetButton"  onclick="resetCounter()">Reset</button>
-        </div>
-    </div>
 
-    <script src="./counter.js">
-    </script>
-    
+  <header>
+    <a id="homeButton" class="header-button">WeHelp</a>
+    <nav>
+      <button id="aboutBtn">About</button>
+      <button id="contactBtn">Contact</button>
+      <button id="bookBtn" class="highlighted">Book now</button>
+    </nav>
+
+  </header>
+
+  <main>
+    <!-- first section -->
+    <section class="mainpage1">
+      <h2>Expert assistance with your documentation</h2>
+      <p>Accuracy in every number, success in every endeavor!</p>
+    </section>
+
+    <!-- second section -->
+    <section class="mainpage2">
+      <h3>Featured Products</h3>
+      <div class="products">
+        <div class="product">
+          <img src="./img/tax.jpg" alt="Pen">
+          <h4>Tax Reporting Preparation</h4>
+          <p>300 DKK</p>
+        </div>
+        <div class="product">
+          <img src="./img/consultation.jpg" alt="Crystal Ball">
+          <h4>Financial Planning Consultations</h4>
+          <p>300 DKK</p>
+        </div>
+        <div class="product">
+          <img src="./img/calculation.jpg" alt="Lamp">
+          <h4>Payroll Calculation and HR Record Management</h4>
+          <p>300 DKK</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- third section -->
+    <section class="mainpage3">
+      <h3>Our Services</h3>
+      <div class="services">
+        <div class="service">
+          <img src="./img/support.jpg" alt="Pen">
+          <h4>Comprehensive Accounting Services</h4>
+          <p>1000 DKK</p>
+        </div>
+        <div class="service">
+          <img src="./img/audit.jpg" alt="Crystal Ball">
+          <h4>Financial Audit and Analysis</h4>
+          <p>1500 DKK</p>
+        </div>
+        <div class="service">
+          <img src="./img/law.jpg" alt="Lamp">
+          <h4>Legal Support in Financial Matters</h4>
+          <p>2000 DKK</p>
+        </div>
+      </div>
+    </section>
+  
+    <footer>
+      <div class="footer-container">
+          <div class="footer-left">
+              <h3>WeHelp</h3>
+          </div>
+          <div class="footer-right">
+              <div class="footer-location">
+                  <h4>Location</h4>
+                  <p>2450, København SV<br> Pladehals Allé 1</p>
+              </div>
+              <div class="footer-contact">
+                  <h4>Contact</h4>
+                  <p><a href="mailto:wehelp@wehelp.com">wehelp@wehelp.com</a><br>(+45) 31-123-456</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="./mainPage.js"></script>
+  </main>
+
 </body>
 </html>
-

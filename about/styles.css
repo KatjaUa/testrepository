@@ -1,0 +1,40 @@
+
+
+.container {
+display: flex;
+margin-left: 10%;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+max-width: 1200px;
+padding: 100px 20px; /* Відступ зверху для контенту */
+}
+
+.text-content {
+flex: 1;
+padding: 15%;
+}
+
+.text-content h1 {
+font-size: 48px;
+font-weight: bold;
+margin: 0 0 20px 0;
+}
+
+.text-content p {
+font-size: 18px;
+line-height: 1.6;
+color: #333333;
+}
+
+.image-content {
+flex: 1;
+display: flex;
+justify-content: center;
+}
+
+.image-content img {
+width: 100%;
+max-width: 400px;
+border-radius: 5px;
+}

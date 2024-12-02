@@ -1,0 +1,116 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+/* Головна частина */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.contact-section {
+    background: url("./coins.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+}
+
+.contact-text {
+    max-width: 50%;
+}
+
+.contact-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-text p {
+    margin: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.contact-form {
+    max-width: 50%;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+form label span {
+    font-weight: normal;
+    font-size: 12px;
+    color: #666;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form textarea {
+    resize: none;
+    height: 100px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+#thankYouMessage {
+    margin-top: 20px;
+    color:black;
+    font-weight: bold;
+    display: none;
+    background-color:white;
+    font-family: Arial, sans-serif;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .contact-text, .contact-form {
+        max-width: 100%;
+    }
+    .contact-text {
+        margin-bottom: 20px;
+    }
+}

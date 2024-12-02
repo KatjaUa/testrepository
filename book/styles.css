@@ -1,0 +1,78 @@
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+main {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.step-container {
+    display: none;
+    margin-top: 2rem;
+}
+
+.step-container.active {
+    justify-content: space-between;
+    display: block;
+}
+
+/* Calendar table styling */
+#calendar {
+    margin-top: 1rem;
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.week-label {
+    font-weight: bold;
+}
+
+.table-body {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.day-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0.3rem;
+    border-right: 1px solid #ddd;
+}
+
+.day-column:last-child {
+    border-right: none;
+}
+
+.time-slot {
+    margin: 0.5rem 0;
+    padding: 0.3rem;
+    background-color: #808385;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 4px;
+}
+
