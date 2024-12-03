@@ -17,7 +17,7 @@ document.getElementById("homeButton").addEventListener("click", () => {
 
 // Кнопки навігації
 document.getElementById("aboutBtn").addEventListener("click", () => {
-  window.location.href = "about/index.html";
+  window.location.href = "/about/index.html";
 });
 
 document.getElementById("contactBtn").addEventListener("click", () => {
