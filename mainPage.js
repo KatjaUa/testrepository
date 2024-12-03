@@ -12,20 +12,20 @@ document.querySelectorAll('.link').forEach(link => {
 
 // Кнопка "WeHelp"
 document.getElementById("homeButton").addEventListener("click", () => {
-  window.location.href = "./index.html";
+  window.location.href = "https://katjaua.github.io/testrepository/index.html";
 });
 
 // Кнопки навігації
 document.getElementById("aboutBtn").addEventListener("click", () => {
-  window.location.href = "./about/index.html";
+  window.location.href = "https://katjaua.github.io/testrepository/about/index.html";
 });
 
 document.getElementById("contactBtn").addEventListener("click", () => {
-  window.location.href = "./contactUS/index.html";
+  window.location.href = "https://katjaua.github.io/testrepository/contactUS/index.html";
 });
 
 document.getElementById("bookBtn").addEventListener("click", () => {
-  window.location.href = "./book/index.html";
+  window.location.href = "https://katjaua.github.io/testrepository/book/index.html";
 });
 
 
