@@ -12,20 +12,20 @@ document.querySelectorAll('.link').forEach(link => {
 
 // Кнопка "WeHelp"
 document.getElementById("homeButton").addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5500/Project/index.html";
+  window.location.href = "/Project/index.html";
 });
 
 // Кнопки навігації
 document.getElementById("aboutBtn").addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5500/Project/about/index.html";
+  window.location.href = "/Project/about/index.html";
 });
 
 document.getElementById("contactBtn").addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5500/Project/contactUS/index.html";
+  window.location.href = "/Project/contactUS/index.html";
 });
 
 document.getElementById("bookBtn").addEventListener("click", () => {
-  window.location.href = "http://127.0.0.1:5500/Project/book/index.html";
+  window.location.href = "/Project/book/index.html";
 });
 
 
